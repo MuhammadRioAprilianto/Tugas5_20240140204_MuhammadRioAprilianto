@@ -1,0 +1,143 @@
+/* 1. Reset & Font Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4a0000; /* warna background */
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* 2. Typography */
+#judul {
+    font-family: 'Jost', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00f2ff;
+    text-shadow: 0 0 15px rgba(0, 242, 255, 0.7);
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+.sub-judul {
+    color: #94a3b8;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+/* 3. Container & Table Structure */
+.container-tabel {
+    width: 100%;
+    max-width: 900px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px; /* Jarak antar card Hero */
+}
+
+.judul-tabel {
+    text-align: left;
+    padding: 0 25px;
+    color: #cbd5e1;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+/* 4. Hero Card Row */
+.kolom-data {
+    background: rgba(255, 255, 255, 0.05); /* Efek Glassmorphism */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.kolom-data:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(0, 242, 255, 0.08);
+    border-color: rgba(0, 242, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 5. Foto Hero Section */
+.gambar-hero {
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px 0 0 15px;
+}
+
+.gambar-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #1a1a1a;
+    padding: 8px;
+    border: 2px solid rgba(0, 242, 255, 0.3);
+    transition: 0.3s;
+}
+
+.kolom-data:hover .gambar-hero img {
+    border-color: #00f2ff;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+}
+
+/* 6. Profil Hero Section */
+.profil-hero {
+    padding: 25px;
+    border-radius: 0 15px 15px 0;
+    vertical-align: top; /* Agar teks rapi di atas */
+}
+
+.info-grup {
+    margin-bottom: 12px;
+    display: flex; /* Biar label dan value sejajar rapi */
+    align-items: baseline;
+}
+
+.label {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    width: 120px; /* Lebar label disamakan agar rapi */
+    flex-shrink: 0;
+}
+
+.value-nama {
+    color: #00f2ff;
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.value {
+    color: #f1f5f9;
+    font-weight: 400;
+}
+
+/* 7. Tag Unit Badge */
+.tag-unit {
+    display: inline-block;
+    margin-top: 20px;
+    background: rgba(0, 242, 255, 0.15);
+    color: #00f2ff;
+    padding: 6px 16px;
+    border-radius: 5px; /* Kotak tajam lebih futuristik */
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 4px solid #00f2ff;
+}
